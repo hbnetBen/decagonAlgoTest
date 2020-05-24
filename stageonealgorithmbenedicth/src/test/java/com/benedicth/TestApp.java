@@ -18,7 +18,7 @@ public class TestApp {
 
     @Before
     public void initTest() {
-        noOfWashes = 6;
+        noOfWashes = 5;
     }
 
     @Test
@@ -29,9 +29,9 @@ public class TestApp {
 
 
     @Test
-    public  void testMaxNumberPairsShouldReturnZero(){
-        Integer expect = 2;
-        assertEquals(expect,app.maxNumberPairs(noOfWashes,new Integer[]{1, 3, 2, 1, 1},new Integer[]{1, 1, 4, 3, 2, 4}));
+    public  void testMaxNumberPairsShouldReturnMaxPairs(){
+        Integer expect = 5;
+        assertEquals(expect,app.maxNumberPairs(noOfWashes,new Integer[]{1, 3, 2, 1, 1},new Integer[]{1, 4, 3, 2, 4}));
     }
 
 }

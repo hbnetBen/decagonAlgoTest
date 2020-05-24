@@ -23,11 +23,7 @@ public class App {
         for (int i = 0; i < newArrB.length; i++) {
             if (java.util.Arrays.binarySearch(arrA,newArrB[i]) >= 0) {
                 resultArrList.add(newArrB[i]);
-            }else{
-                //if(!newArrB[i].equals(index)) countLeftOver = 1;
-                System.out.println("Others: "+ newArrB[i]);
-                resultArrList.add(newArrB[i]);
-            }
+            }else resultArrList.add(newArrB[i]);
         }
         resultArrList.addAll(Arrays.asList(arrA));
         java.util.Arrays.sort(arrA);
@@ -40,9 +36,10 @@ public class App {
             Double currentCount = Math.floor((count++)/2);
             if(currentCount != 0.0)
             {
-                if(resultArrList.get(i) < resultArrList.get(i + 1))
+                if((i <= (resultArrList.size() - 1)))
                 {
-                    maxPairs = maxPairs + currentCount;
+                    if((i + 1) != resultArrList.size() && resultArrList.get(i) < resultArrList.get(i + 1)) maxPairs = maxPairs + currentCount;
+                    if(i == resultArrList.size()-1) maxPairs = maxPairs + currentCount;
                 }
             }
             index = resultArrList.get(i);
