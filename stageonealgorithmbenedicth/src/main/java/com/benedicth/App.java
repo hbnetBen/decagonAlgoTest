@@ -32,7 +32,6 @@ public class App {
         resultArrList.addAll(Arrays.asList(arrA));
         java.util.Arrays.sort(arrA);
         Collections.sort(resultArrList);
-        System.out.println(resultArrList.toString());
         Integer index = resultArrList.get(0);
         Integer count = 1;
         Double maxPairs = 0.0;
@@ -41,11 +40,9 @@ public class App {
             Double currentCount = Math.floor((count++)/2);
             if(currentCount != 0.0)
             {
-                int next = (i+1) > resultArrList.size()? resultArrList.size() - 1 : i+1;
-                if(resultArrList.get(i) < resultArrList.get(next))
+                if(resultArrList.get(i) < resultArrList.get(i + 1))
                 {
                     maxPairs = maxPairs + currentCount;
-                    System.out.println("Counts for "+resultArrList.get(i) + ", pair: " +currentCount);
                 }
             }
             index = resultArrList.get(i);
