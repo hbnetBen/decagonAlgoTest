@@ -12,22 +12,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestApp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/benedicth/TestApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="170">
+              <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+              <folding>
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/benedicth/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="153">
+              <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
               <folding>
-                <element signature="method#calculateDifference#0;class#App#0" />
                 <element signature="e#2067#2084#0" expanded="true" />
                 <element signature="e#2142#2151#0" expanded="true" />
                 <element signature="e#3127#3136#0" expanded="true" />
@@ -39,6 +42,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>out</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
       <map>
@@ -49,8 +57,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/benedicth/TestApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/benedicth/App.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/benedicth/TestApp.java" />
       </list>
     </option>
   </component>
@@ -238,44 +246,44 @@
       <workItem from="1590338223625" duration="2053000" />
       <workItem from="1590356853119" duration="2373000" />
       <workItem from="1591021766807" duration="862000" />
-      <workItem from="1591489920429" duration="20940000" />
+      <workItem from="1591489920429" duration="22945000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestApp - 2020.06.07 at 13h 44m 48s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 22m 45s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 45m 30s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 23m 27s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 46m 14s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 23m 59s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 46m 46s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 25m 07s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 47m 06s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 25m 43s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 48m 17s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 26m 23s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 50m 13s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 27m 35s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 51m 46s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 27m 55s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 52m 04s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 28m 45s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestApp - 2020.06.07 at 13h 54m 04s.xml">
+    <history-entry file="TestApp - 2020.06.07 at 14h 29m 01s.xml">
       <configuration name="TestApp" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27460000" />
+    <option name="totallyTimeSpent" value="29465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -291,7 +299,7 @@
       <window_info anchor="right" id="Serverless Framework GUI" order="3" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3148148" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35470086" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -323,6 +331,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -331,7 +343,6 @@
         <state relative-caret-position="408">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
-            <element signature="method#calculateDifference#0;class#App#0" />
             <element signature="e#2067#2084#0" expanded="true" />
             <element signature="e#2142#2151#0" expanded="true" />
             <element signature="e#3127#3136#0" expanded="true" />
@@ -421,23 +432,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/benedicth/TestApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/benedicth/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="153">
+          <caret line="9" column="55" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           <folding>
-            <element signature="method#calculateDifference#0;class#App#0" />
             <element signature="e#2067#2084#0" expanded="true" />
             <element signature="e#2142#2151#0" expanded="true" />
             <element signature="e#3127#3136#0" expanded="true" />
             <element signature="e#4283#4292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/benedicth/TestApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="61" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
           </folding>
         </state>
       </provider>
