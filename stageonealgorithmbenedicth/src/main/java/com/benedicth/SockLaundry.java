@@ -2,9 +2,9 @@ package com.benedicth;
 
 import java.util.*;
 
-public class App {
+public class SockLaundry {
 
-    public Integer maxNumberPairs(Integer noOfWashes, Integer[] cleanPile, Integer[] dirtyPile)
+    public Integer getMaximumPairOfSocks(Integer noOfWashes, Integer[] cleanPile, Integer[] dirtyPile)
     {
         System.out.println(Arrays.toString(cleanPile));
         System.out.println(Arrays.toString(dirtyPile));
@@ -31,7 +31,6 @@ public class App {
             for(Map.Entry entry : sortedSocks.entrySet()){
                 Integer totalSortedSameTypeOfSocks = (Integer) entry.getValue();
                 if((totalSortedSameTypeOfSocks/2) >= 1){
-                    //System.out.println(Math.floor(totalSortedSameTypeOfSocks/2));
                     outCome = outCome + Math.floor(totalSortedSameTypeOfSocks/2);
                 }
             }
@@ -40,34 +39,32 @@ public class App {
             //Find Matching sorted clean socks in dirty pile
             int countWashAsCleanMatchesInDirtyPile = 0;
             for(Map.Entry entry : sortedSocks.entrySet()){
-                while(searchableDirtyForCleanMatch.indexOf((Integer) entry.getKey()) != -1){
-                    //System.out.println("while: "+searchableDirtyForCleanMatch.indexOf((Integer) entry.getKey()));
-                    countWashAsCleanMatchesInDirtyPile++;
+                if((Integer) entry.getValue() % 2 > 0){
+                    while(searchableDirtyForCleanMatch.indexOf((Integer) entry.getKey()) != -1){
+                        countWashAsCleanMatchesInDirtyPile++;
                         searchableDirtyForCleanMatch.remove(searchableDirtyForCleanMatch.indexOf((Integer) entry.getKey()));
                         sortedSocks.put((Integer) entry.getKey(), sortedSocks.get((Integer) entry.getKey()) + 1);
-                    //System.out.println(entry.getKey()+" : "+countWashAsCleanMatchesInDirtyPile);
+
+                        if(countWashAsCleanMatchesInDirtyPile == noOfWashes) break;
+
+                    }
 
                     if(countWashAsCleanMatchesInDirtyPile == noOfWashes) break;
-
                 }
-
-                if(countWashAsCleanMatchesInDirtyPile == noOfWashes) break;
             }
 
             //Sort from the remaining dirty pile of socks given that there is still no of wash slot left
             if(countWashAsCleanMatchesInDirtyPile < noOfWashes){
-                //System.out.println("current count"+countWashAsCleanMatchesInDirtyPile);
                 List<Integer> remainingDirtyAfterCleanMatch = new LinkedList<Integer>(searchableDirtyForCleanMatch);
                 for (Integer dirtySock : remainingDirtyAfterCleanMatch) {
-                    //System.out.println(countWashAsCleanMatchesInDirtyPile++);
+                    if(countWashAsCleanMatchesInDirtyPile == noOfWashes) break;
                     int foundDirtySockIndex = searchableDirtyForCleanMatch.indexOf(dirtySock);
                     if(foundDirtySockIndex != -1) {
                         searchableDirtyForCleanMatch.remove(foundDirtySockIndex);
                         if(sortedSocks.containsKey(dirtySock)) sortedSocks.put(dirtySock, sortedSocks.get(dirtySock) + 1);
                         else sortedSocks.put(dirtySock,1);
                     }
-
-                    if(countWashAsCleanMatchesInDirtyPile == noOfWashes) break;
+                    countWashAsCleanMatchesInDirtyPile++;
                 }
             }
 
@@ -75,18 +72,10 @@ public class App {
             for(Map.Entry entry : sortedSocks.entrySet()){
                 Integer totalSortedSameTypeOfSocks = (Integer) entry.getValue();
                 if((totalSortedSameTypeOfSocks/2) >= 1){
-                    //System.out.println(Math.floor(totalSortedSameTypeOfSocks/2));
                     outCome = outCome + Math.floor(totalSortedSameTypeOfSocks/2);
                 }
             }
-
-            //System.out.println(searchableDirtyForCleanMatch.toString());
         }
-
-
-
-        //System.out.println("Out Come: "+outCome);
-        System.out.println(sortedSocks);
         return (int) outCome.doubleValue();
     }
 }
